@@ -7,4 +7,4 @@ if __name__ == "__main__":
     while a < len(sys.argv):
         result += int(sys.argv[a])
         a += 1
-        print("{}".format(result))
+    print("{}".format(result))
