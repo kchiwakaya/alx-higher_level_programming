@@ -6,3 +6,5 @@ if __name__ == "__main__":
     for lexi in lexis:
         if lexis[:2] != "__":
             print(lexi)
+else:
+    exit()
