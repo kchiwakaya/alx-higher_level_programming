@@ -3,7 +3,8 @@ def print_reversed_list_integer(my_list=[]):
     """
     prints the reverse of a list
     """
-    num = len(my_list) -1
-    while (num  != -1):
-        print ("{}".format(my_list[num]))
-        num -= 1
+    if type(my_list) is list:
+        newlist = my_list[0:]
+        newlist.reverse()
+        for i in range(len(newlist)):
+            print("{}".format(newlist[i]))
