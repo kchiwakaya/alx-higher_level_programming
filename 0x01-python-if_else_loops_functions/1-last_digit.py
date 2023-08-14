@@ -12,4 +12,4 @@ elif (lastdigit == 0):
 elif ((lastdigit < 6) and (lastdigit != 0)):
     text = "less than 6 and not 0"
 
-print("The Last digit of {} is {} and is {}".format(number,lastdigit,text))
+print("Last digit of {} is {} and is {}".format(number, lastdigit, text))
