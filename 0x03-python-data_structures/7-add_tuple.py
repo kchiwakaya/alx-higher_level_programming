@@ -5,7 +5,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
     and returns the result
     """
     tuple_c = ()
-    for i in range(0,2):
+    for i in range(0, 2):
         if i >= len(tuple_a):
             holder1 = 0
         else:
