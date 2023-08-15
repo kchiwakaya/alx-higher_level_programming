@@ -19,5 +19,7 @@ if __name__ == "__main__":
         exit(1)
 
     output = function(int(argv[1]), int(argv[3]))
-    print("{:d} {:s} {:d} = {:d}".format(int(argv[1]),
-        argv[2], int(argv[3]), output))
+    print(
+            "{:d} {:s} {:d} = {:d}".format(int(argv[1]),
+            argv[2], int(argv[3]), output)
+    )
