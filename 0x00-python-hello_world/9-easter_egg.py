@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import re
-zen ="""The Zen of Python, by Tim Peters
+print(f"The Zen of Python, by Tim Peters
+
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
@@ -19,8 +19,4 @@ Now is better than never.
 Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!"""
-lines = re.split(".", zen)
-
-for line in lines:
-  print(line + "\n")
+Namespaces are one honking great idea -- let's do more of those!"f)
