@@ -11,8 +11,7 @@ class Square:
         """
         constructor init size
         """
-        if self.__validate_size(size):
-            self.__size = size
+        self.__size = size
 
     @property
     def size(self):
