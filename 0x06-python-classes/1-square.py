@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Class sqaure"""
 class Square:
     """
     Square class with attributes :
