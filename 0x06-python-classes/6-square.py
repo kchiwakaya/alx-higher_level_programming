@@ -11,8 +11,7 @@ class Square:
         """
         constructor init size
         """
-        if self.__validate_size(size):
-            self.__size = size
+        self.size = size
 
     @property
     def size(self):
@@ -32,6 +31,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
+
     @property
     def position(self):
         """
@@ -54,12 +54,13 @@ class Square:
         calculate area of square
         """
         return self.__size ** 2
+
     def my_print(self):
         """
-        prints the square using '#' 
+        prints the square using '#'
         taking into account position (x, y) offsets
         """
-    
+
         if self.__size == 0:
             print()
             return
