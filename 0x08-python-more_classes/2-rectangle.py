@@ -6,7 +6,7 @@ class Rectangle():
     """rectangle class
     """
     def __init__(self, width=0, height=0):
-        """ 
+        """
         values for object creation
         """
         self.width = width
@@ -27,7 +27,6 @@ class Rectangle():
         else:
             self.__width = value
 
-
     @property
     def height(self):
         """ getter for height"""
@@ -43,7 +42,6 @@ class Rectangle():
         else:
             self.__height = value
 
-   
     def area(self):
         """ public instance method to return area"""
         return (self.width * self.height)
@@ -53,4 +51,3 @@ class Rectangle():
         if self.width == 0 or self.height == 0:
             return 0
         return ((2 * self.width) + (2 * self.height))
-
