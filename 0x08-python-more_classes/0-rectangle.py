@@ -2,9 +2,9 @@
 
 
 """rect class"""
+
+
 class Rectangle():
-
-
     """
     empty rectangle class
     """
