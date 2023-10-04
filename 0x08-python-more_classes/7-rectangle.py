@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Rect"""
+
 
 class Rectangle():
     """rectangle class
