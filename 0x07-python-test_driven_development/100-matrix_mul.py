@@ -3,8 +3,7 @@
 
 def matrix_mul(m_a, m_b):
     """
-    produces a result of matrix multiplaction of two matricies
-    checks for bad input to function
+    produces a result of matrix multiplaction 
     """
     if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
