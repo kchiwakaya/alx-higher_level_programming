@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-lazy matrix multiplication using a module
-more experience with unit testing
+lazy matrix multiplication 
 """
 from numpy import matmul
 
