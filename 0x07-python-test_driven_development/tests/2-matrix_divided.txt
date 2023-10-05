@@ -12,7 +12,7 @@ Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 >>> test_mat = [[0, 1, 2], [4, 5, 6]]
->>> print(div_mat(test_mat, "holb"))
+>>> print(div_mat(test_mat, "hello"))
 Traceback (most recent call last):
 	...
 TypeError: div must be a number
