@@ -3,8 +3,8 @@
 
 def text_indentation(text):
     """
-    prints a string of text with 2 new lines after '.', '?', and ':'
-    unit tests located in tests/5-text_indentation.txt
+    prints a string of text with 2 new lines
+    unit tests are provided
     """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
