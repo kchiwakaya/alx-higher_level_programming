@@ -4,10 +4,10 @@ UNIT TESTS FOR 5-text_indentation.py
 
 
 >>> text_ind = __import__('5-text_indentation').text_indentation
->>> text_ind("hello:world?")
-hello:
+>>> text_ind("sweet:pie?")
+sweet:
 <BLANKLINE>
-world?
+pie?
 <BLANKLINE>
 
 >>> text_ind("hello:::world?")
