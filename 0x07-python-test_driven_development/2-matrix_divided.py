@@ -3,7 +3,7 @@
 
 def matrix_divided(matrix, div):
     """
-    divides all elements of a matrix, elements must be ->
+    divides all elements of a matrix, elements must be
         int or float type
     """
     if not isinstance(div, (int, float)):
@@ -13,10 +13,10 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
         return matrix
 
-    prevRowLen = -1
+    rowLen = -1
     new_list = []
     for row in matrix:
-        if (prevRowLen != len(row) and prevRowLen != -1):
+        if (rowLen != len(row) and rowLen != -1):
             raise TypeError("Each row of the matrix must have the same size")
             return matrix
         for ele in row:
@@ -26,6 +26,6 @@ def matrix_divided(matrix, div):
                 return matrix
             else:
                 new_list.append(round(ele / div, 2))
-        prevRowLen = len(row)
+        rowLen= len(row)
 
     return new_list
