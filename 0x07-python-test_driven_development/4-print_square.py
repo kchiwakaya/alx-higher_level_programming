@@ -4,7 +4,7 @@
 def print_square(size):
     """
     prints a square of given size
-    unit tests are located in tests/4-print_square.txt
+    unit tests are provided
     """
     if not isinstance(size, (int, float)):
         raise TypeError("size must be an integer")
