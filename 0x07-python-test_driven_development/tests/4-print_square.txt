@@ -10,23 +10,23 @@ UNIT TESTS FOR 4-print_square.py
 
 >>> print_square(0)
 
->>> print_square(-40)
+>>> print_square(-5)
 Traceback (most recent call last):
 	...
 ValueError: size must be >= 0
 
->>> print_square("holberton")
+>>> print_square("hey")
 Traceback (most recent call last):
 	...
 TypeError: size must be an integer
 
->>> print_square(4.4)
+>>> print_square(4.2)
 ####
 ####
 ####
 ####
 
->>> print_square(-4.2)
+>>> print_square(-3.2)
 Traceback (most recent call last):
 	...
 TypeError: size must be an integer
