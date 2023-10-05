@@ -8,7 +8,7 @@ UNIT TESTS FOR 100-matrix_mult.py
  [15 22]]
 
 # test a non list
->>> matrix_mul("test", [[1, 2], [3, 4]])
+>>> matrix_mul("task", [[1, 2], [3, 4]])
 Traceback (most recent call last):
 	...
 ValueError: Scalar operands are not allowed, use '*' instead
@@ -21,7 +21,7 @@ Traceback (most recent call last):
 TypeError: invalid data type for einsum
 
 # test a list of lists with non ints
->>> matrix_mul([[1, 2], ['c', "holb"]], [[1, 2], [3, 4]])
+>>> matrix_mul([[1, 2], ['c', "hey"]], [[1, 2], [3, 4]])
 Traceback (most recent call last):
 	...
 TypeError: invalid data type for einsum
