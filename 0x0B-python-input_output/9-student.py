@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""student class"""
 
 class Student:
     """student class for use
@@ -10,7 +10,7 @@ class Student:
         self.age = age
 
     def to_json(self):
-        """retrieves dict rep of Student in json form
+        """retrieves Student in json form
         """
         return {key: value for (key, value) in self.__dict__.items()
                 if key in list(self.__dict__.keys())}

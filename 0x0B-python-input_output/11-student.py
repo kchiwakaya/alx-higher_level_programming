@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""Studdent Class"""
 
 class Student:
     """student class for use
@@ -10,16 +10,16 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """retrieves dict rep of Student in json form
+        """ rep of Student in json form
         """
-        is_all_strs = True
+        isstrings = True
         if isinstance(attrs, list):
             for ele in attrs:
                 if not isinstance(ele, str):
-                    is_all_strs = False
+                    isstrings = False
         else:
-            is_all_strs = False
+            isstrings = False
 
         return {key: value for (key, value) in self.__dict__.items()
                 if key in list(self.__dict__.keys()) and
-                (not is_all_strs or key in attrs)}
+                (not isstrings or key in attrs)}

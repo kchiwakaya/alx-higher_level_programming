@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-
+"""append write"""
 
 def append_write(filename="", text=""):
-    """appends onto a utf-8 encoded text file
+    """appends a utf-8 encoded textfile
     """
-    with open(filename, 'a', encoding='utf-8') as myFile:
-        return myFile.write(text)
+    with open(filename, 'a', encoding='utf-8') as lines:
+        return lines.write(text)

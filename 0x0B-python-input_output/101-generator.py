@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""hello there"""
 import random
 import sys
 from time import sleep
