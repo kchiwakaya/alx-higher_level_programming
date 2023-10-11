@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """he does"""
 
+
 def is_kind_of_class(obj, a_class):
     """lass MyList that inherits from list
     """
