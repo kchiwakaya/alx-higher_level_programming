@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """class again"""
 
+
 class MyInt(int):
     """inversed int
     """
