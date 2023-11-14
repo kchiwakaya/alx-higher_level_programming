@@ -1,9 +1,6 @@
-#!/usr/bin/python3
-"""write file"""
+class User:
+    id = 1
 
-def write_file(filename="", text=""):
-    """writes a string to a text file (UTF8) and 
-    returns the number of characters written:
-    """
-    with open(filename, 'w', encoding='utf-8') as lines:
-        return lines.write(text)
+u = User()
+User.id = 98
+print(u.id)
