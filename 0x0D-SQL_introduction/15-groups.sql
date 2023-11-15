@@ -1,5 +1,5 @@
 -- group by
-SELECT score,COUNT(*) AS 'number' 
+SELECT score, name
 FROM second_table
- GROUP BY score
- ORDER BY score DESC;
+WHERE name IS NOT NULL
+ORDER BY score DESC;
