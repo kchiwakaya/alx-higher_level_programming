@@ -1,24 +1,23 @@
 #!/usr/bin/python3
-""" Script to print all states"""
-import sys
+"""script for use in getting all states from sql db
+"""
 import MySQLdb
+import sys
 
-if __name == '__main__':
-    """getting an array of passed arguments"""
+if __name__ == '__main__':
     args = sys.argv
-    """ handle inadequate arguments"""
     if len(args) < 4:
-        exit(0)
+        print("Usage: {} username password database_name".format(args[0]))
+        exit(1)
     username = args[1]
     password = args[2]
-    database = args[3]
-
-    db = MySQLdb.connect(host ='localhost',user = username,
-            password = password, db = database,
-            port = 3306)
-
-    cursor = db.cursor()
-    query = cursor.execute("SELECT * FROM BY states.id")
-    records = cursor.fetchall()
-    for row in records:
+    data = args[3]
+    db = MySQLdb.connect(host='localhost', user=username,
+                         passwd=password, db=data,
+                         port=3306)
+    cur = db.cursor()
+    num_rows = cur.execute("SELECT * FROM states ORDER BY states.id")
+    rows = cur.fetchall()
+    for row in rows:
         print(row)
+
