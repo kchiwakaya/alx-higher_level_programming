@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" using sqlalchemy to models using ORM
+""" using sqlalchemy 
 """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
@@ -8,7 +8,7 @@ Base = declarative_base()
 
 
 class State(Base):
-    """state class to use with sqlachemy    """
+    """state class """
     __tablename__ = 'states'
 
     id = Column(Integer, primary_key=True)
