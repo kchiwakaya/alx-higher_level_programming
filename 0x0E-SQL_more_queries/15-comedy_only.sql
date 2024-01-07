@@ -1,7 +1,5 @@
--- script for selecting TV shows and their genres
--- join statement to do result DML
-SELECT
-  tv_shows.title AS title
+-- join TV shows and their genres
+SELECT tv_shows.title AS title
   FROM tv_show_genres
   INNER JOIN tv_shows
   ON tv_show_genres.show_id = tv_shows.id
